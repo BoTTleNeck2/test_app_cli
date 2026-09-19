@@ -1,0 +1,15 @@
+C:\csharp projects\bin\Debug\net10.0\MyProjectName.exe
+C:\csharp projects\bin\Debug\net10.0\MyProjectName.deps.json
+C:\csharp projects\bin\Debug\net10.0\MyProjectName.runtimeconfig.json
+C:\csharp projects\bin\Debug\net10.0\MyProjectName.dll
+C:\csharp projects\bin\Debug\net10.0\MyProjectName.pdb
+C:\csharp projects\obj\Debug\net10.0\MyProjectName.GeneratedMSBuildEditorConfig.editorconfig
+C:\csharp projects\obj\Debug\net10.0\MyProjectName.AssemblyInfoInputs.cache
+C:\csharp projects\obj\Debug\net10.0\MyProjectName.AssemblyInfo.cs
+C:\csharp projects\obj\Debug\net10.0\MyProjectName.csproj.CoreCompileInputs.cache
+C:\csharp projects\obj\Debug\net10.0\MyProjectName.sourcelink.json
+C:\csharp projects\obj\Debug\net10.0\MyProjectName.dll
+C:\csharp projects\obj\Debug\net10.0\refint\MyProjectName.dll
+C:\csharp projects\obj\Debug\net10.0\MyProjectName.pdb
+C:\csharp projects\obj\Debug\net10.0\MyProjectName.genruntimeconfig.cache
+C:\csharp projects\obj\Debug\net10.0\ref\MyProjectName.dll
