@@ -8,28 +8,22 @@ namespace MyProjectName{
     public class MainProgram
     {
         public static void Main(String[] args){
-            Console.Write("Enter your name: ");
-            String? name = Console.ReadLine();
-
             Console.Clear();
-
-            Console.Write("Enter your age: ");       
-
+            Console.Write("Enter your age: ");      
             int inputtedAge = int.Parse(Console.ReadLine());
 
             bool ValidAge = VerifyUser.UserIdentified(inputtedAge);
-
             if (ValidAge)
             {
                 Console.Clear();
-                Console.WriteLine("Veritification success! Mr. " + name);
+                Console.WriteLine("Veritification success!");
                 MainMenu gameMenu = new MainMenu();
                 gameMenu.DisplayMenu();
                 gameMenu.UserInput();
             }
             else
             {
-                Console.WriteLine("Hey Mr. " + name + " Access denied");
+                Console.WriteLine("Access Denied!");
             }
         }
     }
@@ -86,9 +80,11 @@ namespace MyProjectName{
                 
                 int secretNumber = random.Next(1, 101);
                 int guess = 0;
+                int countdown = 5;
+
+                Console.WriteLine("GUESS THE NUMBER BY MUTIPLICATION (" + countdown + " Limit)");
                 
-                Console.WriteLine("GUESS THE NUMBER BY MUTIPLICATION");
-                while (guess != secretNumber)
+                while (guess != secretNumber && countdown >= 0)
                 {
                     Console.Write("Enter your guess number: ");
                     String? input = Console.ReadLine();
@@ -96,19 +92,26 @@ namespace MyProjectName{
 
                     if(guess > secretNumber)
                     {
+                        Console.Clear();
                         Console.WriteLine("Too high");
+                        Console.WriteLine("Remaining limit " + countdown);
                     }
                     else if (guess < secretNumber)
                     {
+                        Console.Clear();
                         Console.WriteLine("Too low try again");
+                        Console.WriteLine("Remaining limit " + countdown);
                     }
                     else
                     {
+                        Console.Clear();
                         Console.WriteLine("Congratulations you guessed it!");
-                    }
-                }
+                        Console.WriteLine("Terminating program......");
 
-                
+                    }
+                    countdown--;
+                }
+                    
             }
             
         }
