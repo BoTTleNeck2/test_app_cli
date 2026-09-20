@@ -3,13 +3,13 @@ using System.Collections;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using System.Security.Cryptography.X509Certificates;
-namespace test{
+namespace MyProjectName{
     
     public class MainProgram
     {
         public static void Main(String[] args){
             Console.Write("Enter your name: ");
-            String name = Console.ReadLine();
+            String? name = Console.ReadLine();
 
             Console.Clear();
 
@@ -59,7 +59,7 @@ namespace test{
 
         public void UserInput()
         {
-            String choice = Console.ReadLine();
+            String? choice = Console.ReadLine();
 
             switch (choice)
             {
@@ -82,7 +82,33 @@ namespace test{
         {
             public void AppStart()
             {
-                Console.WriteLine("SOON!!");
+                Random random = new Random();
+                
+                int secretNumber = random.Next(1, 101);
+                int guess = 0;
+                
+                Console.WriteLine("GUESS THE NUMBER BY MUTIPLICATION");
+                while (guess != secretNumber)
+                {
+                    Console.Write("Enter your guess number: ");
+                    String? input = Console.ReadLine();
+                    guess = int.Parse(input);
+
+                    if(guess > secretNumber)
+                    {
+                        Console.WriteLine("Too high");
+                    }
+                    else if (guess < secretNumber)
+                    {
+                        Console.WriteLine("Too low try again");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Congratulations you guessed it!");
+                    }
+                }
+
+                
             }
             
         }
